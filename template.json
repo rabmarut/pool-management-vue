@@ -1,0 +1,8 @@
+    },
+    "ADDR": {
+      "address": "ADDR",
+      "symbol": "TICKER",
+      "id": "NAME",
+      "decimals": DECIMALS,
+      "precision": PRECISION,
+      "chartColor": "COLOR"
