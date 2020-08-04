@@ -32,7 +32,7 @@ rm $OUT_FILE
 
 i=0
 n=${#COLORS[@]}
-while IFS=, read -r ticker addr decimals precision name
+while IFS=, read -r ticker addr decimals precision id name
 do
     color=${COLORS[$i]}
 
@@ -43,6 +43,7 @@ do
     sed -i "s/TICKER/${ticker}/g" "$file"
     sed -i "s/DECIMALS/${decimals}/g" "$file"
     sed -i "s/PRECISION/${precision}/g" "$file"
+    sed -i "s/ID/${id}/g" "$file"
     sed -i "s/NAME/${name}/g" "$file"
     sed -i "s/COLOR/${color}/g" "$file"
 
